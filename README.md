@@ -26,181 +26,651 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 # PROGRAM:
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MERCATO MISSION</title>
-    <link rel="icon" href="ima 4.png">  
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url(html.png);
+<html>
+    <head>
+    <title>Cafeteria</title>
+    </head>
+    <body>
+        <style>
+            ::after,
+*           ::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-        }
-        .menu {
-            display: flex;
-            flex-direction: column;
-            width: 200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .menu-item {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px;
-            margin: 5px;
-            text-align: center;
-            cursor: pointer;
-        }
-        .menu-item:hover {
-            background-color: #45a049;  
-        }
-        .content {
-            display: none;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
-</head>
-<body><center>
-    <img src="ima 4.png"style="height: 150px;width: 150px;">
-    <h1 style="background-color:burlywood;">MERCATO<BR>MISSION</h1><hr>
-   
-    </center>
-
-    <h1></h1>
-
-    <div class="menu">
-        <div class="menu-item" onclick="showPage('page1')">Menu </div>
-        <div class="menu-item" onclick="showPage('page2')">Administration</div>
-        <div class="menu-item" onclick="showPage('page3')">contact</div>
-    </div>
-    <center>
-        <br><br><br><br><br><br><br><br><br><br>
-    <h1 style="color: rgb(238, 239, 239);">Designed and Developed by Priyadharshini j @ 2024</h1>
-    </center>
-
-    <div id="page1" class="content">
-        <h2>Page 1</h2>
-        <p><h2> MENU.</h2><BR><hr>
-        
-                <tr>
-            <h1 style="background-color: aqua;">PIZZA MARGHERITA</h1>
-        <IMg src="pizza.jpg"style="height: 250px;px;width: 250px;px;">
-       <h2 style="background-color: rgb(245, 210, 106);"> A classic pizza with tomato,mozzarella,and basil.<br>$120</h2>
-        
-           <h1 style="background-color: aqua;">LASAGNA</h1>
-        <img src="lasa.jpg"style="height: 250px;px;width: 250px;px;">
-        <h2 style="background-color:rgb(245, 210, 106) ;">Layers of pasta,meat sauce,and cheese, baked in the oven<br>$150</h2>
-
-        <h1 style="background-color: aqua;">SPAGHETTI CARBONARA</h1>
-           <img src="sapg.jpg"style="height: 250px;px;width: 250px;px;">
-           <H2 style="background-color: rgb(245, 210, 106);">Pasta with eggs,pancetta,and pecorino romano cheese<br>$180</H2><hr>
-
-           <h1 style="background-color: aqua;">RISOTTO ALLA MILANESE</h1>
-             <img src="risotta.jpg"style="height: 250px;px;width: 250px;px;">
-             <h2 style="background-color: rgb(245, 210, 106);">Creamy risoota flavored with saffrom<br>$200</h2><hr>
-
-             <h1 style="background-color: aqua;">TIMAMISU</h1>
-             <img src="tira.jpg"style="height: 250px;px;width: 250px;px;">
-             <h2 style="background-color: rgb(245, 210, 106);">a coffee-flavored dessert made with mascarpone cheese and ladyfingers<br>$240</h2><hr>
-
-              <h1 style="background-color: aqua;">BRUSCHETTA</h1>
-              <img src="brus.jpg"style="height: 250px;px;width: 250px;px;">
-              <h2 style="background-color: rgb(245, 210, 106);">grilled bread topped with garlic, tomatoes,and olive oil<br>$220</h2><hr>
-
-              <h1 style="background-color: aqua;">FOCACCIA</h1>
-              <img src="foccasia.jpg"style="height: 250px;px;width: 250px;px;">
-              <h2 style="background-color: rgb(245, 210, 106);">A flatbread ,often topped with herbs,olive oil,and sea salt<br>$280</h2><hr>
-
-              <h1 style="background-color: aqua;">RAVIOLI</h1>
-              <img src="ravioli.jpg"style="height: 250px;px;width: 250px;px;">
-              <h2 style="background-color: rgb(245, 210, 106);">pasta pockets filled with cheese,meat,or vegetables<br>$300</h2><hr>
-
-              <h1 style="background-color: aqua;">OSSO BUCO</h1>
-              <img src="osso.jpg"style="height: 250px;px;width: 250px;px;">
-              <h2 style="background-color: rgb(245, 210, 106);">braised veal shanks in a rich sauce<br>$350</h2><hr>
-
-              <h1 style="background-color: aqua;">GELATO</h1>
-              <img src="gelato.jpg"style="height: 250px;px;width: 250px;px;">
-              <h2 style="background-color: rgb(245, 210, 106);">italian-style ice cream,known for its creamy texture<br>$380</h2><hr>
-
-              <h1 style="background-color: aqua;">PIATTO</h1>
-              <img src="pizza.jpg"style="height: 250px;px;width: 250px;px;">
-              <h2 style="background-color: rgb(245, 210, 106);">In Italian cuisine, a piatto unico is a single-course meal that combines proteins and starches. <br>$400</h2><hr>
-
-              <h1 style="background-color:aqua;">PUTANESCA PASTA</h1>
-              <img src="putanesca pasta.png"style="height: 250px;px;width: 250px;px;">
-              <h2 style="background-color: rgb(245, 210, 106);">This quick southern Italian sauce is a pungent, briny collaboration of anchovies, olives, and capers within a chunky tomato base.<br>$450</h2><hr>
-
-             </p>
-            </tr>
-            </table>
-        <button onclick="goBack()">Back to Menu</button>
-    </div>
-
-    <div id="page2" class="content">
-        <h2>Page 2 </h2>
-        <p><h1 style="background-color: rgb(43, 186, 177);">ADMINISTRATION</h1><br><hr>
-           <h2 style="background-color: rgb(237, 235, 186);"> MERCATO mission Restaurant  is a restaurant chain that operates primarily in the Indian state of Tamil Nadu.<br>
-             The first outlet was opened in 1957 at Dindigul.<br>
-              Since then, it operates with over 101 outlets globally with 92 outlets in India, and 9 outlets overseas.<br>
-               The Thalappakatti restaurants focus on italian menu's as the core product.<br><br>
-               <img src="rest2.avif" width="300px" height="300px">  <img src="rest.jpeg" width="300px" height="300px">
-               <img src="rest4.avif" width="300px" height="300px">
-              <hr> Right from the beginning, he always emphasized<br> on taste and ensured that the Biriyani made at<br>
-                his hotel was both delicious and unique. This<br> was achieved and still is by meticulous selection
-                 <br>of ingredients prepared from quality masala products.<br> Biriyani was prepared using superior quality Seeraga samba rice,<br>
-                known as Parakkum sittu and meat obtained from top-class breeds of <br>
-                cattle particularly found in the famous cattle-markets of Kannivadi and Paramathi.</h2>
-        </p>
-        <button onclick="goBack()">Back to Menu</button>
-    </div>
-
-    <div id="page3" class="content">
-        <h2>Page 3 </h2>
-        <p><h2 style="background-color: rgb(43, 186, 177);">CONTACT</h2><BR><hr>
-            <img src="rest3.avif" height="200px" width="150">
-            
-        <h2 style="background-color: azure;"> phone no: 8838512605 | email -"mercto mission@gmail.com"|<br>
-            mercto mission hotels Pvt Ltd.,<br>
-        no,25/30,Fourth floor,<br>
-        ramky house , chennai 604206
-        </h2>
-        </p>
-        <button onclick="goBack()">Back to Menu</button>
-    </div>
-
-    <script>
-        function showPage(pageId) {
-            // Hide all content sections
-            var contents = document.querySelectorAll('.content');
-            contents.forEach(function(content) {
-                content.style.display = 'none';
-            });
-
-            // Show the selected content
-            document.getElementById(pageId).style.display = 'block';
-
-            // Hide the menu
-            document.querySelector('.menu').style.display = 'none';
-        }
-
-        function goBack() {
-            // Show the menu
-            document.querySelector('.menu').style.display = 'flex';
-
-            // Hide all content sections
-            var contents = document.querySelectorAll('.content');
-            contents.forEach(function(content) {
-                content.style.display = 'none';
-            });
-        }
-    </script>
-</body>
+.html {
+  font-size: 62.5%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+}
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+.showcase-area {
+  height: 50vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)
+    ),
+    url("cafe.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+#about {
+  padding: 50px 0;
+  background: #f5f5f7;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.menu-items {
+  order: 2;
+  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.logo {
+    position: absolute;
+    left: 15px;
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+        </style>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="cafe food.html">Menu</a></li>
+                    <li><a href="cafe contact.html">Contact</a></li>
+                    <li><a href="cafe admin.html">Admin</a></li>
+                </ul>
+                <h1 class="logo">The Cozy Cup</h1>
+            </div>
+        </nav>
+        <section class="showcase-area" id="showcase">
+            <div class="showcase-container">
+            </div>
+          </section>
+          <section id="about">
+            <div class="about-wrapper container">
+              <div class="about-text">
+                <h2>Just Brewed happiness in a cup!!!</h2>
+                <h2>About Us</h2>
+                <h3>
+                  Escape the hustle, find your heaven.
+                  Cozy atmosphere, specialty coffees and delicious treats.
+                </h3>
+                <hr>
+                <h4>Opening Time : 8 AM</h4>
+                <h4>Closing Time : 8 PM</h4>
+                <h4>Lunch Time : 1 PM - 3 PM</h4>
+                <hr>
+              </div>
+              <h1>Restaurant &copy; All Rights Reserved</h1>
+    </body>
 </html>
-# OUTPUT:
+
+<html>
+    <head>
+        <title>Cafe Food Menu</title>
+    </head>
+    <body style="background-color:bisque">
+        <style>
+            .html {
+  font-size: 62.5%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+            .btn-primary {
+  color: #fff;
+  background: #16a083;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+}
+.menu-items {
+  order: 2;
+  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.food-menu-heading {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 400;
+  color: solid black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+            
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+            .logo {
+    position: absolute;
+    left: 15px;
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+        </style>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <h1 class="logo">The Cozy Cup - Menu</h1>
+            </div>
+        </nav>
+        <section class="showcase-area" id="showcase">
+            <div class="showcase-container">
+            </div>
+          </section>
+        <section class="showcase-area" id="showcase">
+            <div class="showcase-container">
+            </div>
+            
+            <section id="food-menu">
+                <div class="food-menu-container container">
+                  <div class="food-menu-item">
+                    <div class="food-img">
+                      <img src="cappuccino.jpg" />
+                    </div>
+                    <div class="food-description">
+                        
+                      <h2 class="food-titile">Cappuccino</h2>
+                      <p>
+                        A freshly pulled shot of espresso layered with steamed whole milk and thick rich foam to offer a luxurious velvety texture and complex aroma.
+                      </p>
+                      <p>Price: ₹120</p>
+                    </div>
+                  </div>
+                  <div class="food-menu-item">
+                    <div class="food-img">
+                      <img src="americano.jpg"/>
+                    </div>
+                    <div class="food-description">
+                      <h2 class="food-titile">Americano</h2>
+                      <p>
+                        A coffee drink made by diluting espresso with hot water, and is typically described as a balance of robustness and smoothness. 
+                      </p>
+                      <p>Price: ₹129</p>
+                    </div>
+                  </div>
+                  <div class="food-menu-item">
+                    <div class="food-img">
+                      <img src="iced latte.jpg" height="250px" width="300px"/>
+                    </div>
+                    <div class="food-description">
+                      <h2 class="food-titile">Iced latte</h2>
+                      <p>
+                        A cold coffee drink made with espresso, milk, and ice. It's a variation of the traditional latte, but with cold milk instead of hot.
+                      </p>
+                      <p>Price: ₹129</p>
+                    </div>
+                  </div>
+                  <div class="food-menu-item">
+                    <div class="food-img">
+                      <img src="black coffee.jpg" height="250px" width="300px" />
+                    </div>
+                    <div class="food-description">
+                      <h2 class="food-titile">Black coffee</h2>
+                      <p>
+                        A hot drink made from ground coffee and water, and it's usually served without any additives like milk, cream, or sugar.
+                      </p>
+                      <p>Price: ₹110</p>
+                    </div>
+                  </div>
+                  <div class="food-menu-item">
+                    <div class="food-img">
+                      <img src="Frappuccino.jpg" height="250px" width="300px"/>
+                    </div>
+                    <div class="food-description">
+                      <h2 class="food-titile">Frappuccino</h2>
+                      <p>
+                        A blended iced coffee drink that's typically made with coffee or espresso, milk, ice, sweeteners, and flavorings
+                      </p>
+                      <p>Price: ₹470</p>
+                    </div>
+                  </div>
+                  <div class="food-menu-item">
+                    <div class="food-img">
+                      <img src="filter-coffee.jpg" height="250px" width="300px"/>
+                    </div>
+                    <div class="food-description">
+                      <h2 class="food-titile">Filter Coffee</h2>
+                      <p>
+                        A coffee drink that's made by brewing coffee grounds with hot water and then pouring the coffee through a filter.
+                      </p>
+                      <p>Price: ₹50</p>
+                    </div>
+                  </div>
+                  <div class="food-menu-item">
+                    <div class="food-img">
+                      <img src="esp.jpg" height="250px" width="300px"/>
+                    </div>
+                    <div class="food-description">
+                      <h2 class="food-titile">Espresso</h2>
+                      <p>
+                        Espresso is a delicious concentrated form of coffee, served in shots.
+                      </p>
+                      <p>Price: ₹120</p>
+                    </div>
+                  </div>
+                  <div class="food-menu-item">
+                    <div class="food-img">
+                      <img src="chocolate coff.jpg" height="250px" width="300px"/>
+                    </div>
+                    <div class="food-description">
+                      <h2 class="food-titile">Chocolate Coffee</h2>
+                      <p>
+                        Drinking chocolate, or sipping chocolate, is exactly what it sounds like – luxurious, melted chocolate you can drink!
+                      </p>
+                      <p>Price: ₹100</p>
+                    </div>
+                  </div>
+                  <div class="food-menu-item">
+                    <div class="food-img">
+                      <img src="aff.jpeg" height="250px" width="300px"/>
+                    </div>
+                    <div class="food-description">
+                      <h2 class="food-titile">Affogato</h2>
+                      <p>
+                        A big scoop of vanilla ice cream with a hot espresso shot poured over it. When the affogato is ready to serve, the ice cream looks as if it has drowned in the coffee.
+                      </p>
+                      <p>Price: ₹200</p>
+                    </div>
+                  </div>
+                  <div class="food-menu-item">
+                    <div class="food-img">
+                      <img src="cafe mac.jpg" height="250px" width="300px"/>
+                    </div>
+                    <div class="food-description">
+                      <h2 class="food-titile">Caffe Macchito</h2>
+                      <p>
+                        A shot of espresso or strong coffee and a small amount of steamed milk or foam on top. 
+                      </p>
+                      <p>Price: ₹200</p>
+                    </div>
+                  </div>                                                           
+                </div>
+        </section>
+    </body>
+</html>
+
+<html>
+    <head>
+        <style>
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 30%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 70%;
+            display: block;
+          }
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 75%;
+        }
+        
+        .button:hover {
+          background-color: #555;
+        }
+        </style>
+    </head>
+    <body style="background-color: antiquewhite;">
+        <center style="background-color: #000;">
+        <h1 style="color: aqua; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: xx-large;">Admin Page</h1>
+        <h2 style="color: aqua; font-family: 'Times New Roman', Times, serif; font-size: xx-large;">Provides administrative support to ensure efficient operation of the office.</h2>
+        <br>
+        </center>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="owner.jpg" style="width:75%" height="300px">
+              <div class="container">
+                <h1>Zara</h1>
+                <h2 class="title">Owner</h2>
+                <h3>Curates a welcoming space that blends quality coffee, tasty treats, and a sense of community.</h3>
+                <h3>zara887@gmail.com</h3>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+              <img src="manager.jpg" style="width:75%" height="300px">
+              <div class="container">
+                <h1>Noah</h1>
+                <h2 class="title">Manager</h2>
+                <h3>I oversee daily operations, ensuring smooth service, team coordination, and a welcoming atmosphere for customers.</h3>
+                <h3>noah@gmail.com</h3>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="accountant.jpg" style="width:75%" height="300px">
+              <div class="container">
+                <h1>Olivia</h1>
+                <h2 class="title">Accountant</h2>
+                <h3>Manages finances, tracks expenses, and ensures profitability while maintaining accurate records for smooth operations.</h3>
+                <h3>oli4456@gmail.com</h3>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="host.jpg" style="width:75%" height="300px">
+              <div class="container">
+                <h1>Theodore</h1>
+                <h2 class="title">Host</h2>
+                <h3>I warmly greet and guide guests, ensuring they have a pleasant and personalized experience from arrival to departure.</h3>
+                <h3>theo@gmail.com</h3>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="barista.jpg" style="width:75%" height="300px">
+              <div class="container">
+                <h1>Sophia</h1>
+                <h2 class="title">Barista</h2>
+                <h3>Crafts expertly brewed coffee and espresso drinks while providing friendly, attentive service to create a welcoming atmosphere for every customer.</h3>
+                <h3>sophi@gmail.com</h3>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card">
+              <img src="store assistant.webp" style="width:75%" height="300px">
+              <div class="container">
+                <h1>Lucas</h1>
+                <h2 class="title">Store Assistant</h2>
+                <h3>Provides friendly customer service, prepares beverages and food, and helps maintain a clean and organized café environment.</h3>
+                <h3>luca334@gmail.com</h3>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        </body>
+</html>
+
+<html>
+    <head>
+        <title>Cafe Contact</title>
+    </head>
+    <body>
+        <style>
+             
+
+.html {
+  font-size: 62.5%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+  max-width: 1200px;
+  width: 50%;
+  margin: auto;
+}
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+}
+            .showcase-area {
+  height: 50vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)
+    ),
+    url("cafe.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo {
+    position: absolute;
+    left: 15px;
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 60px;
+  z-index: 12;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea{
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email]{
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+        </style>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <h1 class="logo">The Cozy Cup</h1>
+            </div>
+        </nav>
+        <section class="showcase-area" id="showcase">
+            <div class="showcase-container">
+            </div>
+        </section>
+        <center>
+        <section id="contact">
+            <div class="form-container">
+              <form action="/action_page.php"></form>
+                <h1>Contact Us</h1>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+                <label for="email">E-Mail</label>
+                <input type="email" placeholder="Your E-Mail.." /><br>
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:70px"></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+          </section>
+          <h2>Restraunt &copy; all rights reserved</h2>
+          </center>
+    </body>
+</html>
+#OUTPUT:
+<img width="796" height="458" alt="image" src="https://github.com/user-attachments/assets/bef02876-95d5-4123-b9a3-f8f3f73a8f33" />
+<img width="800" height="410" alt="image" src="https://github.com/user-attachments/assets/f990ab2b-8958-459a-adeb-da5a01e700ab" />
+<img width="789" height="448" alt="image" src="https://github.com/user-attachments/assets/854941c3-9a23-471f-ae4b-93abc73334e0" />
+<img width="800" height="461" alt="image" src="https://github.com/user-attachments/assets/a2081db3-60b2-4905-8169-346b575ba2f6" />
+<img width="792" height="454" alt="image" src="https://github.com/user-attachments/assets/75c990b9-d03a-4502-80d1-9705ec64c054" />
+<img width="795" height="462" alt="image" src="https://github.com/user-attachments/assets/26dcdc23-8ccb-4009-89c0-d8805c48be59" />
+<img width="788" height="438" alt="image" src="https://github.com/user-attachments/assets/e4c5bfd0-4fe8-438d-916d-16ec89a378c8" />
+<img width="788" height="458" alt="image" src="https://github.com/user-attachments/assets/7018ce58-e101-4dd1-9d96-6b6966a9d3da" />
+<img width="793" height="479" alt="image" src="https://github.com/user-attachments/assets/1e96775e-9a3d-4668-92eb-03e685e22cde" />
+
+
+
 # RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.
