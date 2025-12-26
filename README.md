@@ -26,6 +26,7 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 # PROGRAM:
+~~~
 <html>
     <head>
     <title>Cafeteria</title>
@@ -659,6 +660,7 @@ input[type=submit]:hover {
           </center>
     </body>
 </html>
+~~~
 #OUTPUT:
 <img width="796" height="458" alt="image" src="https://github.com/user-attachments/assets/bef02876-95d5-4123-b9a3-f8f3f73a8f33" />
 <img width="800" height="410" alt="image" src="https://github.com/user-attachments/assets/f990ab2b-8958-459a-adeb-da5a01e700ab" />
